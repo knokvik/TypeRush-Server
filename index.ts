@@ -22,4 +22,4 @@ app.get('/', (req, res) => {
   res.send('Hello, this is the Express server!');
 });
 
-httpServer.listen(PORT, () => console.log(`Server is running on port ${PORT}`));
+httpServer.listen(PORT, () => console.log(`Server is running on port ${PORT} - Version 2.0`));

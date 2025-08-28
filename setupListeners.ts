@@ -8,6 +8,7 @@ export function setupListeners(io: Server) {
     console.log(`New connection - ${socket.id}`);
 
     socket.on("join-game", (roomId: string, name: string) => {
+      console.log(roomId,name);
       if (!roomId) {
         return socket.emit("error", "Invalid room ID");
       }
